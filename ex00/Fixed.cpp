@@ -13,7 +13,6 @@ Fixed::Fixed(int NumberValue) : NumberValue(NumberValue)
 Fixed::Fixed(const Fixed &Original) : NumberValue(Original.NumberValue)
 {
 	std::cout << "Copy constructor called" << std::endl;
-	*this = Original; // Sets the current object to become a copy of the original object.
 }
 
 Fixed &Fixed::operator=(const Fixed &Original)

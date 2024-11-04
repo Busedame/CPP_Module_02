@@ -24,10 +24,7 @@ Fixed::Fixed(const float FloatValue) : FPValue(0), IntValue(0), FloatValue(Float
 	// is used to ensure proper caluclation with roundf).
 }
 
-Fixed::Fixed(const Fixed &Original) : FPValue(Original.FPValue)
-{
-	*this = Original; // Sets the current object to become a copy of the original object.
-}
+Fixed::Fixed(const Fixed &Original) : FPValue(Original.FPValue){}
 
 // DESTRUCTOR
 Fixed::~Fixed(){}

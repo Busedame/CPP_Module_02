@@ -28,7 +28,6 @@ Fixed::Fixed(const float FloatValue) : FPValue(0), IntValue(0), FloatValue(Float
 Fixed::Fixed(const Fixed &Original) : FPValue(Original.FPValue)
 {
 	std::cout << "Copy constructor called" << std::endl;
-	*this = Original; // Sets the current object to become a copy of the original object.
 }
 
 Fixed &Fixed::operator=(const Fixed &Original)
